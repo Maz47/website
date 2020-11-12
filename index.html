@@ -30,7 +30,9 @@
           <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
           <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
@@ -77,11 +79,11 @@
             </div>
             <div class="about__information-data">
               <i class="bx bx-phone about__information-icon"></i>
-              <span>+43 699 18258259</span>
+              <span><a href="tel:+4369918258259">+43 699 18258259</a></span>
             </div>
             <div class="about__information-data">
               <i class="bx bx-envelope about__information-icon"></i>
-              <span>maz47.dev@gmail.com</span>
+              <span><a href="mailto:maz47.dev@gmail.com">maz47.dev@gmail.com</a></span>
             </div>
           </div>
           <div class="about__information">
@@ -143,9 +145,9 @@
       </div>
     </section>
 
-    <section class="education section">
+    <section class="education section" id="education">
       <span class="section-subtitle">Qualification</span>
-      <h2 class="section-title">My Education</h2>
+      <h2 class="section-title">My Education and Experience</h2>
 
       <div class="education__container c-grid">
         <div class="education__content">
@@ -161,7 +163,39 @@
 
           <div>
             <h3 class="education__race">Electronics and Technical Informatics</h3>
-            <span class="education__speciality">Diploma</span>
+            <span class="education__speciality">Diploma - Android app to control a selfmade robot</span>
+          </div>
+        </div>
+        <div class="education__content">
+          <div>
+            <h3 class="education__year">2018 - 2020</h3>
+            <span class="education__university">Felder KG</span>
+          </div>
+
+          <div class="education__time">
+            <span class="education__rounder"></span>
+            <span class="education__line"></span>
+          </div>
+
+          <div>
+            <h3 class="education__race">ERP Development</h3>
+            <span class="education__speciality">Java, Vue.js, Node.js</span>
+          </div>
+        </div>
+        <div class="education__content">
+          <div>
+            <h3 class="education__year">2020 - now</h3>
+            <span class="education__university">Grid-IT / THEMIS Software</span>
+          </div>
+
+          <div class="education__time">
+            <span class="education__rounder"></span>
+            <span class="education__line"></span>
+          </div>
+
+          <div>
+            <h3 class="education__race">Software Development</h3>
+            <span class="education__speciality">Java (Desktop and Android), Xamarin</span>
           </div>
         </div>
       </div>
@@ -174,41 +208,42 @@
         <div class="services__content">
           <i class="bx bx-mobile services__icon"></i>
           <h3 class="services__title">Mobile App Development</h3>
-          <p class="services__description">This service that I offer is hight quality and above all esperience that I
-            have in the labor field for many years.</p>
-        </div>
-        <div class="services__content">
-          <i class="bx bx-pen services__icon"></i>
-          <h3 class="services__title">Mobile App Design</h3>
-          <p class="services__description">This service that I offer is hight quality and above all esperience that I
-            have in the labor field for many years.</p>
+          <p class="services__description">You have an idea of the next big mobile app, but don't have any knowledge
+            about programming it? Than you are absolutely right here! Just contact me and I will help develop your
+            App!</p>
         </div>
         <div class="services__content">
           <i class="bx bx-brush services__icon"></i>
-          <h3 class="services__title">UI / UX</h3>
-          <p class="services__description">This service that I offer is hight quality and above all esperience that I
-            have in the labor field for many years.</p>
+          <h3 class="services__title">Mobile App Design</h3>
+          <p class="services__description">The functionalities of your app are prepeared but you can't come up with a
+            modern and clean design? Just contact me and we will work on it together!</p>
         </div>
         <div class="services__content">
           <i class="bx bx-server services__icon"></i>
           <h3 class="services__title">Backend Development</h3>
-          <p class="services__description">This service that I offer is hight quality and above all esperience that I
-            have in the labor field for many years.</p>
+          <p class="services__description">You need a performant and secured backend for your app? Together we can
+            overcome this problem and create a stable backend with Google Firebase.</p>
+        </div>
+        <div class="services__content">
+          <i class='bx bx-trending-up services__icon'></i>
+          <h3 class="services__title">Improvements</h3>
+          <p class="services__description">You already have an app on the playstore or appstore but your users aren't
+            happy with it? Contact me and I will help you improve your app!</p>
         </div>
         <div class="services__content">
           <i class="bx bx-bug services__icon"></i>
           <h3 class="services__title">Bugfixes</h3>
-          <p class="services__description">This service that I offer is hight quality and above all esperience that I
-            have in the labor field for many years.</p>
+          <p class="services__description">You have an app but it keeps crashing and you have absolutely no clue why? I
+            will debug your app and fix any bugs comming up!</p>
         </div>
       </div>
     </section>
 
-    <section class="project section">
+    <section class="project section" id="project">
       <div class="project__container c-grid">
         <div class="project__data">
           <h2 class="section-title project__title">Do you have a project in mind?</h2>
-          <p class="project__description">If you have a project that you want to carry out, ...</p>
+          <p class="project__description">If you have a project that you want to carry out, just let me know!</p>
           <a href="#contact" class="button button__light">Contact Me</a>
         </div>
         <img src="assets/img/contact.svg" alt="" class="project_img">
@@ -262,11 +297,11 @@
         <div>
           <div class="contact__info">
             <h3 class="contact__subtitle">Call me</h3>
-            <span class="contact__text">+43 699 18258259</span>
+            <span class="contact__text"><a href="tel:+4369918258259">+43 699 18258259</a></span>
           </div>
           <div class="contact__info">
             <h3 class="contact__subtitle">Email</h3>
-            <span class="contact__text">maz47.dev@gmail.com</span>
+            <span class="contact__text"><a href="mailto:maz47.dev@gmail.com">maz47.dev@gmail.com</a></span>
           </div>
           <div class="contact__info">
             <h3 class="contact__subtitle">Location</h3>
