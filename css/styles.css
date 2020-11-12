@@ -6,13 +6,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
-
-  --primary-color: #ffffff;
-  --primary-color-dark: #202020;
-  --secondary-color: #1F48B1;
-  --secondary-color-dark: #132b69;
-  --text-color: #202020;
-
+  
   --body-font: 'Poppins', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -41,6 +35,32 @@
   }
 }
 
+html, html[data-theme="light"] {
+  --primary-color: #ffffff;
+  --primary-color-dark: #202020;
+  --secondary-color: #1F48B1;
+  --secondary-color-dark: #132b69;
+  --selected-color: #202020;
+  --text-color: #202020;
+  --background-color: #ffffff;
+}
+
+html[data-theme="dark"] {
+  --primary-color: #ffffff;
+  --primary-color-dark: #ffffff;
+  --secondary-color: #1F48B1;
+  --secondary-color-dark: #132b69;
+  --selected-color: #202020;
+  --text-color: #ffffff;
+  --background-color: #202020;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+      content: "dark";
+    }
+}
+
 *,::before,::after {
   box-sizing: border-box;
 }
@@ -54,7 +74,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
   -ms-overflow-style: none;
@@ -126,7 +146,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 
@@ -186,7 +206,17 @@ img {
 }
 
 .active {
-  color: var(--primary-color-dark);
+  color: var(--selected-color);
+}
+
+.theme__switcher {
+  font-size: 1.1rem;
+  border-radius: 50%;
+  margin: 0 0 0 var(--mb-2);
+}
+
+.theme__switcher__desktop {
+  display: none;
 }
 
 .home__container {
@@ -716,12 +746,22 @@ img {
     width: 0;
   }
 
-  .nav__toggle, .nav__logo, .nav__close {
+  .nav__toggle, .nav__logo, .nav__close, .theme__switcher {
     display: none;
   }
 
   .nav__menu {
     left: 0;
+  }
+
+  .theme__switcher__desktop {
+    display: inline;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
   }
 
   .home__container {
