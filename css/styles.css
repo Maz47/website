@@ -519,7 +519,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(44, 100, 205, .7);
+  background-color: var(--secondary-color);
   border-radius: .5rem;
   transition: .3s;
 }

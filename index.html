@@ -242,10 +242,19 @@
       <div class="contact__container c-grid">
         <form action="https://formspree.io/f/xaylbnky" method="POST" class="contact__form">
           <div class="contact__inputs">
-            <input type="text" placeholder="Name" name="name" class="contact__input">
-            <input type="mail" placeholder="Email" name="_replyto" class="contact__input">
+            <label>
+              <span hidden>Name:</span>
+              <input type="text" placeholder="Name" name="name" class="contact__input">
+            </label>
+            <label>
+              <span hidden>Email:</span>
+              <input type="mail" placeholder="Email" name="_replyto" class="contact__input">
+            </label>
           </div>
-          <textarea name="message" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+          <label>
+            <span hidden>Message:</span>
+            <textarea name="message" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+          </label>
           <input type="submit" value="Send Message" class="button contact__button">
         </form>
         <div>
